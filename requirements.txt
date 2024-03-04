@@ -1,0 +1,4 @@
+ultralytics==8.0.9
+supervision==0.1.0
+omegaconf
+numpy

@@ -1,0 +1,30 @@
+path:
+train: images/train
+val: images/val
+test:
+
+names:
+
+
+
+metadata:
+  model: yolov8n.yaml
+  weights:
+  train:
+    device: '1'
+    data: 'src/config/yolo_v8.yaml'
+    epochs: 50
+    imgsz: 640
+    batch: 32
+    name: 'yolo'
+    iou: 0.5
+    conf: 0.25
+    half: False
+  val:
+    data: 'src/config/yolo_v8.yaml'
+  infer:
+    conf: 0.5
+    iou: 0.7
+    half: False
+    device: 'cpu'
+    verbose: False
